@@ -36,7 +36,7 @@ const MainHome = () => {
 				<PulseCircle />
 				<span className='text-sm' translate='no'>
 					<span>{content.sub_title_2}</span>
-					<a className='underline' target='_blank' rel='noreferrer' href='https://open.spotify.com/intl-pt'>
+					<a className='underline' target='_blank' rel='noreferrer' href='https://open.spotify.com/playlist/37i9dQZF1DXb57FjYWz00c?si=75a247de072a46c0'>
 						{content.spotify_playlist}
 					</a>
 				</span>
