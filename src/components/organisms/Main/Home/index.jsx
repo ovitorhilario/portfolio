@@ -1,5 +1,5 @@
 import { FiArrowUpRight, FiHeadphones, FiLayers, FiGrid, FiStar } from "react-icons/fi";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import setup from '../../../../assets/cards/setup.jpg';
 import computer from '../../../../assets/cards/computer.jpg';
@@ -19,7 +19,7 @@ const MainHome = () => {
 		sub_title_2: 'Coding and currently listening my ',
 		spotify_playlist: 'spotify playlist',
 		button_social: 'Meus Projetos',
-		button_others: 'Meus Artigos'
+		button_others: 'Meu GitHub'
 	};
 
 	return (
@@ -42,14 +42,23 @@ const MainHome = () => {
 				</span>
 			</div>
 			<div className='flex sm:flex-row sm:items-center flex-col items-start gap-4'>
-				<FadeButton>
-					<span className='flex flex-row items-center gap-1.5'>
-						<a href='#2' className='text-white'>{content.button_social}</a>
-						<FiArrowUpRight color='#FFF' size={20} />
-					</span>
-				</FadeButton>
+				<Link to={'/apps'}>
+					<FadeButton>
+						<span className='flex flex-row items-center gap-1.5'>
+							<span className="text-white">{content.button_social}</span>
+							<FiArrowUpRight color='#FFF' size={20} />
+						</span>
+					</FadeButton>
+				</Link>
 				<button>
-					<a href='#23' className='text-white'>{content.button_others}</a>
+					<a 
+						className='text-white' 
+						href='https://github.com/ovitorhilario' 
+						target="_blank"
+						rel="noreferrer"
+					>
+						{content.button_others}
+					</a>
 				</button>
 			</div>
 			<div className='w-full flex flex-wrap flex-row items-center justify-between gap-3 md:gap-6 mt-6'>
@@ -62,26 +71,26 @@ const MainHome = () => {
 					Icon={FiGrid}
 				/>
 				<ProjectCard 
-					title={'Setup'}
+					title={'Setup - in Dev...'}
 					count={'3'}
 					imgSource={setup}
-					onClick={() => navigate('/apps')}
+					onClick={() => navigate('/')}
 					color='#4E4FEB'
 					Icon={FiHeadphones}
 				/>
 				<ProjectCard 
-					title={'Stack'}
+					title={'Stack - in Dev...'}
 					count={'3'}
 					imgSource={stack}
-					onClick={() => navigate('/apps')}
+					onClick={() => navigate('/')}
 					color='#9BABB8'
 					Icon={FiLayers}
 				/>
 				<ProjectCard 
-					title={'Hobbies'}
+					title={'Hobbies - in Dev...'}
 					count={'3'}
 					imgSource={senna}
-					onClick={() => navigate('/apps')}
+					onClick={() => navigate('/')}
 					color='#FF6666'
 					Icon={FiStar}
 				/>
