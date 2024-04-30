@@ -4,8 +4,9 @@ const MainStack = () => {
 	const navigate = useNavigate();
 	
 	const content = {
-		title: "Sobre",
-		sub_title: 'Desenvolvedor Mobile com foco em React Native e Android Nativo (Jetpack Compose & XML). Atualmente trabalha na Epistemic como Mobile Developer e está cursando Bacharelado em Engenharia de Software pela Universidade Tecnológica Federal do Paraná (UTFPR).',
+		title: "Stack",
+		sub_title: '> Mobile Developer, React Native e Android Nativo.',
+		sub_title_2: 'JavaScript, TypeScript, React, React Native, Android - Jetpack Compose & XML.',
 	};
 
 	return (
@@ -15,13 +16,12 @@ const MainStack = () => {
 					{content.title}
 				</span>
 			</h1>
-			<span className='text-lg block font-medium text-[#888]'>
+			<span className='text-lg block font-medium text-white'>
 				{content.sub_title}
 			</span>
-			
-			<div className='w-full flex flex-wrap flex-row items-center justify-between gap-3 md:gap-6 mt-6'>
-				
-			</div>
+			<span className='text-base block font-medium text-[#888]'>
+				{content.sub_title_2}
+			</span>
 		</main>
 	);
 }

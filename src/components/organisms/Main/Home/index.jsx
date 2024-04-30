@@ -64,36 +64,36 @@ const MainHome = () => {
 			<div className='w-full flex flex-wrap flex-row items-center justify-between gap-3 md:gap-6 mt-6'>
 				<ProjectCard 
 					title={'Apps'}
-					count={'3'}
+					count={'9'}
 					imgSource={computer}
 					onClick={() => navigate('/apps')}
 					color='#d77a88'
 					Icon={FiGrid}
 				/>
-				<ProjectCard 
+				{/* <ProjectCard 
 					title={'Setup - in Dev...'}
 					count={'3'}
 					imgSource={setup}
 					onClick={() => navigate('/')}
 					color='#4E4FEB'
 					Icon={FiHeadphones}
-				/>
+				/> */}
 				<ProjectCard 
-					title={'Stack - in Dev...'}
+					title={'Stack'}
 					count={'3'}
 					imgSource={stack}
-					onClick={() => navigate('/')}
+					onClick={() => navigate('/stack')}
 					color='#9BABB8'
 					Icon={FiLayers}
 				/>
-				<ProjectCard 
+				{/* <ProjectCard 
 					title={'Hobbies - in Dev...'}
 					count={'3'}
 					imgSource={senna}
 					onClick={() => navigate('/')}
 					color='#FF6666'
 					Icon={FiStar}
-				/>
+				/> */}
 			</div>
 		</main>
 	);

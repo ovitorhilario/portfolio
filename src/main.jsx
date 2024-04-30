@@ -9,6 +9,7 @@ import MainHome from './components/organisms/Main/Home/index.jsx';
 import MainAbout from './components/organisms/Main/About/index.jsx';
 import MainApps from './components/organisms/Main/Apps/index.jsx';
 import MainContact from './components/organisms/Main/Contact/index.jsx';
+import MainStack from './components/organisms/Main/Stack/index.jsx';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '/apps',
         element: <MainApps />
+      },
+      {
+        path: '/stack',
+        element: <MainStack />
       },
       {
         path: '/contact',

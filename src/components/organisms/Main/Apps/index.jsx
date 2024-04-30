@@ -15,7 +15,7 @@ const MainApps = () => {
 				imageUrl={mystock}
 				githubUrl={'https://github.com/ovitorhilario/MyStock'}
 				googlePlayUrl={'https://play.google.com/store/apps/details?id=com.vitorhilarioapps.mystock'}
-				tags={['Android','Firebase', 'Authentication', 'Firestore', 'Analytics']}
+				tags={['Android', 'Firebase', 'Authentication', 'Firestore', 'Analytics']}
 			/>
 			<AppCard
 				title={'AutoScanner'}
